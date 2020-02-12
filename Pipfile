@@ -8,9 +8,10 @@ black = "*"
 pylint = "*"
 pytest = "*"
 pytest-cov = "*"
+pipenv-to-requirements = "*"
 
 [packages]
-pipenv-to-requirements = "*"
+
 
 [requires]
 python_version = "3.7"
