@@ -13,7 +13,7 @@ build_env:
 test:
     stage: test
     script:
-        - black --check .
+        - python -m black --check .
         - pytest --cov-config=.coveragerc --cov=resc --cov-report=html
     artifacts:
         paths:
