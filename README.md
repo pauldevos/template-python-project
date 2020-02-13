@@ -8,5 +8,5 @@ Run `pipenv run pre-commit run --all-files` if there are file that were committe
 
 ## Use
 Activate the shell with: `pipenv shell`
-Run local tests: `pipenv run test`
+Run local tests: `pipenv run pipenv run pytest --cov-config=.coveragerc --cov=resc`
 Write out the requirement: `pipenv run pipenv_to_requirements`
