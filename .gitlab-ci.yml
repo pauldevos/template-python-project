@@ -13,7 +13,9 @@ test:
     stage: test
     script:
         - python -m black --check .
-        - pytest --cov-config=.coveragerc --cov=resc --cov-report=term
+        - mkdir cov 
+        - pytest --cov-config=.coveragerc --cov=resc --cov-report=term > cov/cov.txt
+        - cat cov/cov.txt
     artifacts:
         paths:
             - htmlcov
