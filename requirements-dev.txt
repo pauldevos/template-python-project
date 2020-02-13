@@ -12,6 +12,7 @@
 
 black
 pipenv-to-requirements
+pre-commit
 pylint
 pytest
 pytest-cov
